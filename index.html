@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Kaluanã</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="js/tradutor.js" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" sizes="16x16"  href="Imagens/Logo-2.3.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="...">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="..."></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="..."></script>
+
+    
+    <style>
+                body {
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fc;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            
+            
+        }
+
+        header {
+            background-color: #075049;
+            padding: 15px 5px;
+            text-align: center;
+            height: x;
+        }
+
+        h1 {
+            font-size: 30px;
+            margin: 0;
+            font-weight: bold;
+            text-align: center;
+            
+        }
+        
+
+        h2 {
+            text-align: left;
+            color:#22252F;
+            font-size: 25px;
+            margin: 25px;
+            font-weight: bold;
+
+
+        }
+
+        h3{
+            text-align: left;
+            color:#22252F;
+            font-size: 20px;
+        }
+
+        h5{
+            text-align: left;
+            color:#22252F;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        p {
+            text-align: justify;
+            color:#424446;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 30px;
+        }
+
+        form {
+            max-width: 300px;
+            margin-left: auto;
+            margin-top: -30px;
+            margin-right: 20px;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: left;
+            background-color: #042e2a;
+            
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 40px 40px;
+            display: inline-block;
+            font-weight: bold;
+ 
+        }
+
+        nav a:hover {
+            background-color: #8FBC8F;
+        }
+
+        #content {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #image-container {
+            border-radius: 10px;
+            overflow: hidden;
+            margin-left: 20px;
+            margin-right: 5px;
+            
+        }
+
+        #image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            
+        }
+
+        #image-container:last-child {
+            margin-left: auto;
+        }
+
+        #text-container {
+            flex: 1;
+            margin-left: 10px;
+        }
+
+        #text-container h2 {
+            margin-bottom: 5px;
+            font-weight: bold; 
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        .card {
+            width: 20%;
+            margin: 10px;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .question-box {
+            background-color: #e9f2e9;
+            padding: 10px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        .question-box-green {
+            background-color: #042e2a; 
+            color: #042e2a;
+            padding: 20px;
+            margin: 0px;
+            border-radius: 0px;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .photo {
+            text-align: center;
+            margin: 10px;
+        }
+
+        .photo img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .photo h3,
+        .photo p {
+            margin: 0;
+        }
+
+        .centered-logo {
+            max-width: 100px; 
+            max-height: 60px;
+            margin-left: 370px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #e9f2e9;
+            color: #22252F;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5    px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #8fbc8f; /* Altera a cor de fundo ao passar o mouse */
+        }
+        
+        .social-link {
+            margin-right: 10px; /* Ajustar se necessário */
+            cursor: pointer;
+            text-decoration: none; /* Remove o sublinhado */
+            outline: none; /* Remove a borda de foco padrão */
+        }
+    
+        /* Adiciona estilo quando o mouse passa sobre o link */
+        .social-link:hover {
+            opacity: 0.8; /* Opacidade reduzida ao passar o mouse */
+        }
+
+    
+        .search-form {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-input {
+            height: 30px;
+            margin-top: -15px;
+            margin-left: 10px;
+            flex: 1;
+            border-radius: 5px 5px 5px 5px;
+        }
+
+        .search-button {
+            width: 30px;
+            height: 30px;
+            margin-top: -5px;
+            background-color: #8fbc8f;
+            border: none;
+            border-radius: 5px 5px 5px 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .search-icon {
+            width: 20px;
+            height: 20px;
+            margin-top: -5px;
+        }
+
+        #google_translate_element {
+            margin-left: 1180px;
+        }
+
+        
+
+    </style>   
+
+</head>
+
+<body>
+
+    <!--Logo-->
+    <img src="Imagens/Logo 2.2 .png" style="left: 50px; top: -55px; position: absolute; width: 180px; height: 180px;">
+    <!-- Fim  da Logo-->
+
+    <!-- Header-->
+    <header>
+        <h1>‎</h1>
+        <form class="search-form" role="search">
+            <input class="form-control me-2 search-input" type="search" placeholder="Digite aqui..." aria-label="Search">
+            <button class="btn btn-outline-success search-button" type="submit">
+                <img src="imagens/lupa.png" alt="" class="search-icon">
+            </button>
+        </form>
+    </header>
+    <!--Fim Header-->
+
+    <!--Navbar-->
+    <nav>
+        <a href="https://thibosco.notion.site/Kaluan-ecb085713bde4aecbdeb7e711dde8d59?pvs=4" target="_blank" 
+        style="display: block; padding: 10px;">Regras</a>
+        
+</a>
+
+    </nav>
+    <!--Fim da Navbar-->
+
+
+    <!--tradutor 😎-->
+
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: 'pt', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
+                'google_translate_element'
+            );
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <!--fim do tradutor 😎-->
+      
+
+    <!--Img + texto-->
+      <div id="content">
+        <div id="image-container">
+            <img src="Imagens/Onça.jpg" alt="Imagem Retangular">
+        </div>
+        <div id="text-container">
+            <h2>Quem Somos?</h2>
+            <p>Somos um grupo de alunos do ensino médio do Senac, buscando garantir uma experiência prazerosa para cada aluno ao atingir seus objetivos no projeto. Contamos com professores capacitados que nos oferecem suporte. Nosso objetivo é criar um jogo que aborde a história do Brasil de forma ficcional, visando alcançar mais pessoas e estudantes, proporcionando um aprendizado divertido e didático. Queremos compartilhar nosso prazer na criação do jogo e disseminar conhecimento por meio de uma narrativa envolvente e uma estrutura bem planejada.</p>
+        </div>
+    </div>
+    <!--Fim Img + texto-->
+
+
+    <h2>Curiosidades <span class="badge bg-secondary"><img src="Imagens/bulb (1).png" alt="" width="20px"></span></h2>
+
+    <!--Cards-->
+    <div class="card-group">
+        <div class="card">
+            <img src="Imagens/Harpia.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Hárpia, um dos animais mais destemidos e inteligentes da Amazônia.</h5>
+                <p class="card-text">As harpias, criaturas mitológicas conhecidas por sua coragem e inteligência, têm uma presença marcante na região amazônica. Essas aves majestosas são símbolos da fauna exuberante da Amazônia e são reconhecidas por suas asas poderosas e garras afiadas.</p>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="Imagens/arco.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Indígenas e suas tradições e culturas que estão até hoje.</h5>
+                <p class="card-text">Suas tradições refletem uma profunda harmonia com o meio ambiente e valores que resistiram ao tempo, resistindo aos desafios da modernidade. A preservação das culturas indígenas é essencial para a diversidade cultural global.</p>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="Imagens/tapioca.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Comidas do dia a dia que são de origem indígena.</h5>
+                <p class="card-text">Práticas como o uso da mandioca na produção de tapioca e a preparação de pratos como o tacacá e a paçoca são heranças indígenas que continuam presentes em nossa alimentação diária.</p>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="Imagens/história.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Um pouco de sua história e suas curiosidades.</h5>
+                <p class="card-text">Os indígenas, povos nativos do Brasil, têm uma história rica e diversificada, marcada por culturas únicas e uma profunda conexão com a natureza. Suas tradições, transmitidas oralmente, refletem valores, rituais e sabedorias passadas de geração em geração.</p>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <!--Fim dos Cards-->
+
+    <p>‎ </p>
+
+    <!--Img + texto 2-->
+    <div id="content">
+        <div id="image-container">
+        </div>
+        <div id="text-container">
+            <h2>Sobre o universo do RPG <img src="Imagens/caderno.png" alt="" width="20px"; height="20"; > </h2> 
+            <p>Nesse universo, os jogadores são imersos em um contexto de dualidade entre forças divinas e humanas, explorando temas de vingança, honra, transcendência e busca pela verdade. Eles têm a oportunidade de assumir papéis variados, desde os destemidos raonis em busca de vingança até personagens que desempenham um papel crucial na resolução do conflito divino.
+            À medida que os jogadores se aventuram pelo mundo de Kaluanã, eles enfrentam desafios épicos, encontram personagens marcantes e exploram uma narrativa rica em mitologia e cultura indígena. O destino de Kaluanã está nas mãos dos jogadores, e suas escolhas moldarão o curso dessa saga épica, determinando o futuro tanto dos mortais quanto dos deuses.</p>
+        </div>
+        <div id="image-container">
+            <img src="Imagens/Indigena.jpg" alt="Outra Imagem Retangular">
+        </div>
+    </div>
+    <!--Fim Img + texto 2-->
+    
+
+    <h2>Perguntas Frequentes <span class="badge bg-secondary"><img src="Imagens/duvida.png" alt="" width="20px"></span></h2>
+
+    <!--Accordion-->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Quais são os desafios e obstáculos  do RPG?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"> <h3>Durante o jogo você irá enfrentar diversos inimigos e obstaculos, sendo em sua maioria animais da fauna brasileira, como por exemplo a onça pintada, além disso existira outros desafios como entrar em acampamentos portugueses e muito mais.</h3>
+            </div> <code></code>
+
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Em que contexto cultural o RPG se baseia? 
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><h3>O RPG ocorre no nordeste do Brasil, de 1500 a 1530, quando os povos indígenas Tupis Guaranis viviam lá. O jogo destaca a cultura, estilo de vida e crenças dos Tupis Guaranis, que tinham forte conexão com a natureza e seus deuses. Os jogadores aprenderão sobre a história, arte, música e costumes desses povos.</h3></div><code></code>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Como crio minha ficha?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><h3>Para criar sua ficha é simples! Vá na categória “Regras” e depois leia como criar seu personagem, após isso é só você colocar todas as informações necessárias. Lembrando que você só tem 20 pontos de atributos!</h3></div><code></code>
+          </div>
+        </div>
+      </div>
+    <!--Fim do Accordion-->
+
+      <!--question box-->
+    <div class="question-box" onclick="toggleOptions(this)">
+        <p class="question">
+            <img src="Imagens/alerta.png" width="25px" alt="" style="margin-right: 8px;">Caso suas dúvidas não tenham sido respondidas, mande um e-mail para nós! <strong>kaluanapjsenac@gmail.com</strong>! </p>
+        
+    </div>
+    <!--fim da question box-->
+
+    <div id="text-container">
+        <h2>Nosso time <img src="Imagens/grupo.png" alt=""; width="20px"></h2>
+    </div>
+
+    <!--Fotos-->
+    <div class="gallery">
+        <div class="photo">
+            <img src="Imagens/eu.jpg" alt="Photo 1">
+            <h3>Gustavo Thibes</h3>
+            <p>Designer Gráfico</p>
+            <p>Programador</p>
+        </div>
+        
+        <div class="photo">
+            <img src="Imagens/talita.png" alt="Photo 2">
+            <h3>Talita do Monte</h3>
+            <p>Líder</p>
+            <p>‎ </p>
+        </div>
+
+        <div class="photo">
+            <img src="Imagens/camillo.png" alt="Photo 3">
+            <h3>Rafael Camillo</h3>
+            <p>Designer Gráfico</p>
+            <p>Escritor das Regras</p>
+        </div>
+
+        <div class="photo">
+            <img src="Imagens/maria.png" alt="Photo 4">
+            <h3>Maria Clara</h3>
+            <p>Programadora</p>
+            <p>Escritora Criativa</p>
+        </div>
+
+        <div class="photo">
+            <img src="Imagens/issami.jpg" alt="Photo 5">
+            <h3>Issami Umeoka</h3>
+            <p>Escritor Criativo</p>
+            <p>‎ </p>
+        </div>
+
+        <div class="photo">
+            <img src="Imagens/biel.jpg" alt="Photo 7">
+            <h3>Gabriel Henrique</h3>
+            <p>Designer Gráfico</p>
+            <p>Marketing</p>
+        </div>
+    </div>
+    <!--Fim das Fotos-->
+
+    <h1>‎</h1>
+
+
+
+    <!--Barra final abaixo-->
+<div class="question-box question-box-green" onclick="toggleOptions(this)">
+    <a href="https://www.instagram.com/projeto.kaluana/" target="_blank" class="social-link" onclick="changeBackgroundColor(this)">
+        <img src="Imagens/instagram.png" alt="" width="25px">
+    </a>
+    <a href="https://twitter.com/KaluanaProjeto" target="_blank" class="social-link" onclick="changeBackgroundColor(this)">
+        <img src="Imagens/twitter-alt.png" alt="" width="25px">
+    </a>
+    <button onclick="scrollToTop()">Voltar ao Topo</button>
+
+    <script>
+        function changeBackgroundColor(element) {
+            
+            element.classList.toggle('clicked');
+        }
+
+        function scrollToTop() {
+            // Rola para o topo da página
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+    <img src="Imagens/Logo 2.png" alt="Logo" class="centered-logo"> 
+</div>
+
+
+</body>
+
+</html> 
